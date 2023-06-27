@@ -1,0 +1,25 @@
+# 직사각형에서 탈출
+
+x, y, w, h = input().split()
+x, y, w, h = int(x), int(y), int(w), int(h)
+
+xdif, ydif = abs(x-w), abs(y-h)
+
+if x < y:
+    a = x
+else:
+    a = y
+
+if xdif < ydif:
+    if xdif < a:
+        print(xdif)
+    else:
+        print(a)
+else:
+    if ydif < a:
+        print(ydif)
+    else:
+        print(a)
+        
+# 수학문제 풀땐 변수명 최대한 간단하게
+# 부들부들.. 예외 생각하는 연습하기 : xdif < x 가 아니라 xdif < a였음
