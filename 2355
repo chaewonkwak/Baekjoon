@@ -1,0 +1,8 @@
+# 시그마 : 시간단축
+
+a, b = [int(x) for x in input().split()]
+
+# a, b 중 뭐가 더 크다는 말 없으니까 절대값 취해주기
+n = abs(b - a) + 1
+    
+print(int((a + b) * n / 2))
