@@ -1,0 +1,5 @@
+# TV 크기
+
+D, H, W = [int(x) for x in input().split()]
+x = (D * D / (H * H + W * W))**(1/2)
+print(int(H * x), int(W * x))
