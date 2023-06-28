@@ -1,0 +1,18 @@
+#팰린드롬수
+
+plist = []
+
+while True:
+    a = input()
+    if a == "0":
+        break
+    else:
+        plist.append(a)
+        # plist += a 도 됨 (문자열일때만..)
+
+for val in plist:
+    result = "yes"
+    for i in range(len(val) // 2):
+        if val[i] != val[len(val)-i-1]:
+            result = "no"     
+    print(result)           
